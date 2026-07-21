@@ -29,11 +29,13 @@ function CalculatorApp() {
   return (
     <div>
       <h1>Calculator</h1>
+      <h3><i>Enter two numbers to perform calculations</i></h3>
       <input
         type="number"
         value={num1}
         onChange={(e) => setNum1(Number(e.target.value))}
       />
+      <span>   </span>
       <input
         type="number"
         value={num2}

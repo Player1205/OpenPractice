@@ -34,7 +34,7 @@ function App() {
         />
       ))} */
       }
-      <IncDec/>
+      {/* <IncDec/> */}
       <CalculatorApp/>
     </>
   )
