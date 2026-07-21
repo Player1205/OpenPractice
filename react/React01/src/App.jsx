@@ -3,6 +3,7 @@ import './App.css'
 import StudentComponent from './components/StudentComponent.jsx'
 import IncDec from './components/IncDec.jsx'
 import CalculatorApp from './components/CalculatorApp.jsx'
+import Todo from './components/Todo.jsx'
 
 function App() {
 //  const studentinformation = [
@@ -35,7 +36,8 @@ function App() {
       ))} */
       }
       {/* <IncDec/> */}
-      <CalculatorApp/>
+      {/* <CalculatorApp/> */}
+      <Todo/>
     </>
   )
 }
