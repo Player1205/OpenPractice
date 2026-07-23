@@ -23,7 +23,13 @@ function AcademicDash() {
         ]);
         
         return (
-            <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh", fontFamily: "Arial, sans-serif" }}>
+            <div style={{
+                display: "flex",
+                flexDirection: "column",
+                minHeight: "100vh",
+                width: "100%",
+                fontFamily: "Arial, sans-serif"
+                }}>
                 <header style={{ backgroundColor: "#4CAF50", color: "white", padding: "10px", textAlign: "center" }}>
                     <h1>Academic Dashboard</h1>
                 </header>
