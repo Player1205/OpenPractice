@@ -5,6 +5,7 @@ import IncDec from './components/IncDec.jsx'
 import CalculatorApp from './components/CalculatorApp.jsx'
 import Todo from './components/Todo.jsx'
 import AcademicDash from './components/AcademicDash.jsx'
+import StudentReg from './components/StudentReg.jsx'
 
 function App() {
 //  const studentinformation = [
@@ -39,7 +40,9 @@ function App() {
       {/* <IncDec/> */}
       {/* <CalculatorApp/> */}
       {/* <Todo/> */}
-      <AcademicDash/>
+      {/* <AcademicDash/> */}
+      
+      <StudentReg />
     </>
   )
 }

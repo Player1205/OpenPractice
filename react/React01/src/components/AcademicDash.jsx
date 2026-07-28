@@ -20,6 +20,12 @@ function AcademicDash() {
         {
            id: 6, name : "Ronak", age: 22 , course: "Computer Science and Engineering", grade: "B"
         },
+        {
+           id: 7, name : "Vanshika Binani", age: 20 , course: "Computer Science and Engineering", grade: "A"
+        },
+        {
+           id: 8, name : "Ronak", age: 22 , course: "Computer Science and Engineering", grade: "B"
+        },
         ]);
         
         return (
@@ -37,20 +43,51 @@ function AcademicDash() {
                 <div style={{ display: "flex", flex: 1 }}>
                     <aside style={{ width: "200px", backgroundColor: "#f4f4f4", padding: "10px" }}>
                         <h2>Sidebar</h2>
-                        <ul style={{padding: 0 , margin: 0, color: "#333", listStyleType: "none", gap: "10px", display: "flex", flexDirection: "column", backgroundColor: "#812f2f8d", padding: "10px", borderRadius: "4px"}}>
-                            <li>Home</li>
-                            <li>Students</li>
-                            <li>Courses</li>
-                            <li>Grades</li>
+                        <ul style={{padding: 0 , margin: 0, color: "#050202", listStyleType: "none", gap: "10px", display: "flex", flexDirection: "column", backgroundColor: "#4510108d", padding: "10px", borderRadius: "4px"}}>
+                            <li style={{ padding: "10px", backgroundColor: "#812f2f8d", borderRadius: "4px" }}>Home</li>
+                            <li style={{ padding: "10px", backgroundColor: "#812f2f8d", borderRadius: "4px" }}>Students</li>
+                            <li style={{ padding: "10px", backgroundColor: "#812f2f8d", borderRadius: "4px" }}>Courses</li>
+                            <li style={{ padding: "10px", backgroundColor: "#812f2f8d", borderRadius: "4px" }}>Grades</li>
                         </ul>
                     </aside>
-                    <main style={{ flex: 1, padding: "10px"}}>
+                    <main style={{
+                        flex: 1,
+                        padding: "20px",
+                        width: "100%"
+                    }}>
                         <h2>Student List</h2>
-                        <ul style={{ listStyleType: "none", padding: 0 }}>
+                        <ul 
+                            style={{
+                                display: "grid",
+                                gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
+                                gap: "20px",
+                                listStyle: "none",
+                                padding: 0,
+                                margin: 0,
+                                width: "100%"
+                            }}>
                             {students.map((student) => (
-                                <li style={{ marginBottom: "10px", padding: "10px", backgroundColor: "#f9f9f9", border: "1px solid #ddd", borderRadius: "4px", display: "block", textAlign: "left", color: "#333" }} key={student.id}>
-                                    {student.name} - Age: {student.age}, Course: {student.course}, Grade: {student.grade}
-                                </li>
+                            <li
+                                key={student.id}
+                                style={{
+                                    backgroundColor: "#f9f9f9",
+                                    border: "1px solid #ddd",
+                                    borderRadius: "6px",
+                                    padding: "20px",
+                                    textAlign: "center",
+                                    minHeight: "180px",
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    justifyContent: "center",
+                                    color: "#333",
+                                }}>
+                                <h2 style={{ margin: "0 0 15px 0" }}>{student.name}</h2>
+
+                                <p><strong>ID:</strong> {student.id}</p>
+                                <p><strong>Age:</strong> {student.age}</p>
+                                <p><strong>Course:</strong> {student.course}</p>
+                                <p><strong>Grade:</strong> {student.grade}</p>
+                            </li>
                             ))}
                         </ul>
                     </main>
