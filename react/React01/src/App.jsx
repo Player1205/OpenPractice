@@ -8,6 +8,7 @@ import AcademicDash from './components/AcademicDash.jsx'
 import StudentReg from './components/StudentReg.jsx'
 import APIStudent from './components/APIStudent.jsx'
 
+
 function App() {
 //  const studentinformation = [
 //   {
