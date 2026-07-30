@@ -6,6 +6,7 @@ import CalculatorApp from './components/CalculatorApp.jsx'
 import Todo from './components/Todo.jsx'
 import AcademicDash from './components/AcademicDash.jsx'
 import StudentReg from './components/StudentReg.jsx'
+import APIStudent from './components/APIStudent.jsx'
 
 function App() {
 //  const studentinformation = [
@@ -42,7 +43,8 @@ function App() {
       {/* <Todo/> */}
       {/* <AcademicDash/> */}
       
-      <StudentReg />
+      {/* <StudentReg /> */}
+      <APIStudent/>
     </>
   )
 }

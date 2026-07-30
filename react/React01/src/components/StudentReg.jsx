@@ -20,6 +20,7 @@ function StudentReg() {
     return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
         <br />
+        <br />
       <h2 style={{ fontSize: '4rem', marginBottom: '2rem' }}>Student Registration Form</h2>
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '50%' }}>
         <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} style={{ fontSize: '2rem', padding: '1rem 2rem', marginBottom: '1rem', borderRadius: '5px', border: '1px solid #ccc' }} />
