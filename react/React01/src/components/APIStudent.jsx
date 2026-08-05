@@ -33,7 +33,7 @@ const APIStudent = () => {
             student.email?.toLowerCase().includes(term)
         );
     });
-
+    
     return (
         <div>
             <br />
