@@ -20,7 +20,7 @@ const APIStudent = () => {
         };
         fetchStudents();
     }, []);
-    
+    //This is the filtering logic that checks if the search term is present in any of the student fields (name, id, phone, email). It splits the search term into individual words and checks if all words are present in any of the fields. If no search term is provided, it returns all students.
     const filteredStudents = students.filter(student => {
         const terms = searchTerm.toLowerCase().split(' ').filter(Boolean);
 
