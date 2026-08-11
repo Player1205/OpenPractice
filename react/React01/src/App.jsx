@@ -7,6 +7,7 @@ import Todo from './components/Todo.jsx'
 import AcademicDash from './components/AcademicDash.jsx'
 import StudentReg from './components/StudentReg.jsx'
 import APIStudent from './components/APIStudent.jsx'
+import StudentRoute from './components/StudentRoute.jsx'
 
 
 function App() {
@@ -45,7 +46,8 @@ function App() {
       {/* <AcademicDash/> */}
       
       {/* <StudentReg /> */}
-      <APIStudent/>
+      {/* <APIStudent/> */}
+      <StudentRoute/>
     </>
   )
 }
