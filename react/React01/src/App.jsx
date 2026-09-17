@@ -47,7 +47,7 @@ function App() {
       
       {/* <StudentReg /> */}
       {/* <APIStudent/> */}
-      <StudentRoute/>
+      {/* <StudentRoute/> */}
     </>
   )
 }
